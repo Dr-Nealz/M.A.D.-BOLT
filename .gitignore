@@ -42,9 +42,13 @@ modelfiles
 # docs ignore
 site
 
+# docs site (VitePress)
+docs/node_modules
+docs/.vitepress/dist
+docs/package-lock.json
+
 # commit file ignore
 app/commit.json
 changelogUI.md
-docs/instructions/Roadmap.md
 .cursorrules
 .qodo
