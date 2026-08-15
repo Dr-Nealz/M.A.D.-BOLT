@@ -174,7 +174,14 @@ for (const name of RUNTIME_DEPS) {
 
 while (queue.length) {
   const { name, version } = queue.shift();
-  if (seen.has(name)) continue; // first version wins for the flat root
+  // If we've already placed this package, only a DIFFERENT resolved version
+  // needs to replace it (a later, stricter requirement wins over an earlier
+  // lax one — e.g. conf needs ajv@8.17.1 even if a prior dep got ajv@6.12.6).
+  const existing = seen.get(name);
+  if (existing) {
+    if (stripPeers(version) === stripPeers(existing.version)) continue;
+    seen.delete(name);
+  }
   const storeDir = resolveStore(name, version);
   if (!storeDir) { missing.push(`${name}@${version}`); continue; }
   seen.set(name, { version, storeDir });
