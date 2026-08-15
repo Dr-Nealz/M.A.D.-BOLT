@@ -11,6 +11,7 @@ lerna-debug.log*
 node_modules
 dist
 dist-ssr
+!dist/setup.nsi
 *.local
 
 .vscode/*
