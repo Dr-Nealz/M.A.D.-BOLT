@@ -52,3 +52,8 @@ app/commit.json
 changelogUI.md
 .cursorrules
 .qodo
+
+# electron-builder / NSIS build outputs (keep setup.nsi as recipe)
+M.A.D. BOLT-REMIX-*.exe
+M.A.D. BOLT-REMIX-*.zip
+
