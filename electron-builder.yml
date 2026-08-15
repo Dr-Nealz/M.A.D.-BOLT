@@ -1,0 +1,62 @@
+appId: com.drnealb.madbolt
+productName: M.A.D. BOLT-REMIX
+directories:
+  buildResources: build
+  output: dist
+  # Package from the self-contained deploy dir (flat node_modules, no pnpm store)
+  app: build/app
+files:
+  - "**/*"
+  - "!**/*.map"
+  - node_modules/**/*
+extraMetadata:
+  main: build/electron/main/index.mjs
+asar: true
+
+mac:
+  icon: assets/icons/icon.icns
+  target:
+    - dmg
+  identity: null
+  category: "public.app-category.developer-tools"
+  type: "distribution"
+  hardenedRuntime: true
+  entitlements: "assets/entitlements.mac.plist"
+  entitlementsInherit: "assets/entitlements.mac.plist"
+  gatekeeperAssess: false
+
+win:
+  icon: assets/icons/icon.ico
+  target:
+    - nsis
+    - portable
+  artifactName: ${name}-${version}-${os}-${arch}.${ext}
+  signAndEditExecutable: false
+
+linux:
+  icon: assets/icons/icon.png
+  target:
+    - AppImage
+    - deb
+  artifactName: ${name}-${version}-${os}-${arch}.${ext}
+  category: Development
+
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  shortcutName: ${productName}
+  artifactName: ${name}-${version}-${os}-${arch}-setup.${ext}
+
+npmRebuild: false
+
+publish:
+  provider: github
+  owner: Derek-X-Wang
+  repo: bolt.local
+  private: true
+  releaseType: release
+
+electronDownload:
+  mirror: https://npmmirror.com/mirrors/electron/
