@@ -197,7 +197,7 @@ permission. Full details in [SUBLICENSE.md](./SUBLICENSE.md).
 
 ---
 
-## 🧑‍🔬 The Laboratory
+## 🧑‍🔬 The Laboratory — Contributors
 
 **Created & engineered by**
 
