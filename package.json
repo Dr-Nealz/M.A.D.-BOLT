@@ -3,6 +3,14 @@
   "description": "M.A.D. BOLT-REMIX — an AI-powered app builder by Dr. Neal (The M.A.D. Doctor)",
   "private": true,
   "license": "SEE LICENSE IN LICENSE",
+  "homepage": "https://github.com/Dr-Nealz/M.A.D.-BOLT#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dr-Nealz/M.A.D.-BOLT.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Dr-Nealz/M.A.D.-BOLT/issues"
+  },
   "sideEffects": false,
   "type": "module",
   "version": "1.0.0",
