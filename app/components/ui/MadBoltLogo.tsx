@@ -30,6 +30,9 @@ export function MadBoltLogo({ className, iconOnly = false }: MadBoltLogoProps) {
             </span>
           </span>
           <span className="text-[9px] font-semibold tracking-[0.22em] text-bolt-elements-textTertiary">BOLT-REMIX</span>
+          <span className="text-[7px] font-medium tracking-[0.14em] text-bolt-elements-textTertiary/80 mt-[2px]">
+            BY: DR. NEAL (THE M.A.D. DOCTOR)
+          </span>
         </span>
       )}
     </span>

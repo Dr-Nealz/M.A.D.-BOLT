@@ -7,8 +7,8 @@ import BackgroundRays from '~/components/ui/BackgroundRays';
 
 export const meta: MetaFunction = () => {
   return [
-    { title: 'M.A.D. BOLT-REMIX By: Dr. Neal' },
-    { name: 'description', content: 'M.A.D. BOLT-REMIX — AI-powered app builder by Dr. Neal' },
+    { title: 'M.A.D. BOLT-REMIX By: Dr. Neal (The M.A.D. Doctor)' },
+    { name: 'description', content: 'M.A.D. BOLT-REMIX — AI-powered app builder by Dr. Neal (The M.A.D. Doctor)' },
   ];
 };
 

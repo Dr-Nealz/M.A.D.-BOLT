@@ -18,7 +18,7 @@ export function createWindow(rendererURL: string) {
       height: 800,
       ...bounds,
     },
-    title: 'M.A.D. BOLT-REMIX By: Dr. Neal',
+    title: 'M.A.D. BOLT-REMIX By: Dr. Neal (The M.A.D. Doctor)',
     vibrancy: 'under-window',
     visualEffectState: 'active',
     webPreferences: {
