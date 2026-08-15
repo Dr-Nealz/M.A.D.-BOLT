@@ -1,9 +1,11 @@
 import { json, type MetaFunction } from '@remix-run/cloudflare';
 import { ClientOnly } from 'remix-utils/client-only';
+import { useEffect, useState } from 'react';
 import { BaseChat } from '~/components/chat/BaseChat';
 import { Chat } from '~/components/chat/Chat.client';
 import { Header } from '~/components/header/Header';
 import BackgroundRays from '~/components/ui/BackgroundRays';
+import { GalvaniBoot } from '~/components/ui/GalvaniBoot';
 
 export const meta: MetaFunction = () => {
   return [
@@ -21,11 +23,22 @@ export const loader = () => json({});
  * to keep the UI clean and consistent with the design system.
  */
 export default function Index() {
+  const [booted, setBooted] = useState(false);
+
+  // Show the GALVANI boot splash once per app load (self-cleaning via callback).
+  useEffect(() => {
+    // Respect reduced-motion preference: skip straight to the app.
+    if (window.matchMedia?.('(prefers-reduced-motion: reduce)').matches) {
+      setBooted(true);
+    }
+  }, []);
+
   return (
     <div className="flex flex-col h-full w-full bg-bolt-elements-background-depth-1">
       <BackgroundRays />
       <Header />
       <ClientOnly fallback={<BaseChat />}>{() => <Chat />}</ClientOnly>
+      {!booted && <GalvaniBoot onComplete={() => setBooted(true)} />}
     </div>
   );
 }

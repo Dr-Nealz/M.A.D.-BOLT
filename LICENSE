@@ -1,3 +1,19 @@
+# Dual License — M.A.D. BOLT-REMIX By: Dr. Neal
+
+This repository is licensed under TWO licenses, because it has two layers:
+
+1. **MIT License (this file)** — covers the code, dependencies, and structure
+   **derived from the bolt.diy project** (Copyright (c) 2024 StackBlitz, Inc.
+   and bolt.diy contributors). This is the layer described below.
+2. **M.A.D. Original Work** — covers the original branding, assets, theme,
+   modules, and documentation created by **Rev. Dr. Neal — The M.A.D. Doctor**.
+   This layer is reserved to Dr. Neal and is defined in
+   [**SUBLICENSE.md**](./SUBLICENSE.md).
+
+See [**SUBLICENSE.md**](./SUBLICENSE.md) for the full dual-license terms.
+
+---
+
 MIT License
 
 Copyright (c) 2024 StackBlitz, Inc. and bolt.diy contributors

@@ -372,6 +372,22 @@ export const BaseChat = React.forwardRef<HTMLDivElement, BaseChatProps>(
                 <p className="text-sm lg:text-base mb-8 text-bolt-elements-textTertiary animate-fade-in animation-delay-200">
                   Bring ideas to life in seconds or get help on existing projects.
                 </p>
+                {/* GALVANI by M.A.D. LABS — signature lockup */}
+                <div className="inline-flex items-center gap-2.5 mt-6 px-4 py-2 rounded-full border border-bolt-elements-borderColor bg-bolt-elements-background-depth-2/60 backdrop-blur animate-fade-in animation-delay-300">
+                  <span className="inline-flex w-5 h-5 shrink-0 items-center justify-center rounded-md bg-[linear-gradient(135deg,#2CE5B8,#7C5CFF)]">
+                    <svg viewBox="0 0 24 24" className="w-3 h-3 fill-white" aria-hidden="true">
+                      <path d="M11 21h-1l1-7H7.5c-.58 0-.57-.32-.38-.66.19-.34.05-.08.07-.12C8.48 10.94 10.42 7.54 13 3h1l-1 7h3.5c.49 0 .56.33.47.51l-.07.15C12.96 17.55 11 21 11 21z" />
+                    </svg>
+                  </span>
+                  <span className="text-xs font-bold tracking-[0.18em]">
+                    <span className="bg-[linear-gradient(120deg,#2CE5B8,#7C5CFF)] bg-clip-text text-transparent">
+                      GALVANI
+                    </span>
+                  </span>
+                  <span className="text-xs font-semibold tracking-[0.14em] text-bolt-elements-textTertiary">
+                    BY M.A.D. LABS — ANIMATE YOUR STACK
+                  </span>
+                </div>
               </div>
             )}
             <StickToBottom

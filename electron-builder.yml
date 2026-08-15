@@ -53,8 +53,8 @@ npmRebuild: false
 
 publish:
   provider: github
-  owner: Derek-X-Wang
-  repo: bolt.local
+  owner: Dr-Nealz
+  repo: M.A.D.-BOLT
   private: true
   releaseType: release
 

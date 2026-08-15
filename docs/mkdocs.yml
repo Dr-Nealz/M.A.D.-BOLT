@@ -1,4 +1,4 @@
-site_name: bolt.diy Docs
+site_name: M.A.D. BOLT-REMIX Docs
 site_dir: ../site
 theme:
   name: material
@@ -31,25 +31,22 @@ theme:
     repo: fontawesome/brands/github
   # logo: assets/logo.png
   # favicon: assets/logo.png
-repo_name: bolt.diy
-repo_url: https://github.com/stackblitz-labs/bolt.diy
+repo_name: M.A.D.-BOLT
+repo_url: https://github.com/Dr-Nealz/M.A.D.-BOLT
 edit_uri: ''
 
 extra:
   generator: false
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/stackblitz-labs/bolt.diy
-      name: bolt.diy
+      link: https://github.com/Dr-Nealz/M.A.D.-BOLT
+      name: M.A.D. BOLT-REMIX
     - icon: fontawesome/brands/discourse
       link: https://thinktank.ottomator.ai/
-      name: bolt.diy Discourse
+      name: M.A.D. Community
     - icon: fontawesome/brands/x-twitter
-      link: https://x.com/bolt_diy
-      name: bolt.diy on X
-    - icon: fontawesome/brands/bluesky
-      link: https://bsky.app/profile/bolt.diy
-      name: bolt.diy on Bluesky
+      link: https://x.com/
+      name: Dr. Neal on X
 
 markdown_extensions:
   - pymdownx.highlight:

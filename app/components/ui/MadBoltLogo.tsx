@@ -6,30 +6,59 @@ const BOLT_PATH =
 interface MadBoltLogoProps {
   className?: string;
 
-  /** Hide the text wordmark, show only the aurora bolt badge */
+  /** Hide the text wordmark, show only the GALVANI bolt badge */
   iconOnly?: boolean;
+
+  /** Emphasize the GALVANI lockup ("GALVANI by M.A.D. LABS — animate your stack") */
+  variant?: 'default' | 'galvani';
 }
 
 /**
- * MAD BOLT wordmark — aurora-gradient bolt badge + "M.A.D. BOLT-REMIX" wordmark.
- * Theme-aware: the aurora gradient reads on both light and dark backgrounds.
+ * MAD BOLT wordmark — GALVANI bolt badge (spark → violet) + wordmark.
+ * Theme-aware: the GALVANI gradient reads on both light and dark backgrounds.
+ *
+ * Blend mode: Multiverse Aurora remains the ambient theme; GALVANI is the
+ * signature — the bolt badge + "GALVANI by M.A.D. LABS" lockup.
+ * The BOLT-REMIX · By: Dr. Neal (The M.A.D. Doctor) signature is always carried.
  */
-export function MadBoltLogo({ className, iconOnly = false }: MadBoltLogoProps) {
+export function MadBoltLogo({ className, iconOnly = false, variant = 'default' }: MadBoltLogoProps) {
   return (
     <span className={classNames('inline-flex items-center gap-2 select-none', className)}>
-      <span className="relative inline-flex w-7 h-7 shrink-0 items-center justify-center rounded-lg bg-aurora shadow-[0_0_16px_rgba(107,140,255,0.45)]">
+      <span
+        className={classNames(
+          'relative inline-flex w-7 h-7 shrink-0 items-center justify-center rounded-lg shadow-[0_0_16px_rgba(124,92,255,0.45)]',
+          'bg-[linear-gradient(135deg,#2CE5B8,#7C5CFF)]',
+        )}
+      >
         <svg viewBox="0 0 24 24" className="w-4 h-4 fill-white drop-shadow" aria-hidden="true">
           <path d={BOLT_PATH} />
         </svg>
       </span>
       {!iconOnly && (
         <span className="flex flex-col leading-none text-left">
-          <span className="text-[15px] font-extrabold tracking-wide">
-            <span className="bg-[linear-gradient(120deg,#6B8CFF,#2DD4BF,#EC4899)] bg-clip-text text-transparent">
-              M.A.D.
-            </span>
-          </span>
-          <span className="text-[9px] font-semibold tracking-[0.22em] text-bolt-elements-textTertiary">BOLT-REMIX</span>
+          {variant === 'galvani' ? (
+            <>
+              <span className="text-[15px] font-extrabold tracking-wide">
+                <span className="bg-[linear-gradient(120deg,#2CE5B8,#7C5CFF)] bg-clip-text text-transparent">
+                  GALVANI
+                </span>
+              </span>
+              <span className="text-[9px] font-semibold tracking-[0.22em] text-bolt-elements-textTertiary">
+                BY M.A.D. LABS — ANIMATE YOUR STACK
+              </span>
+            </>
+          ) : (
+            <>
+              <span className="text-[15px] font-extrabold tracking-wide">
+                <span className="bg-[linear-gradient(120deg,#2CE5B8,#7C5CFF)] bg-clip-text text-transparent">
+                  M.A.D.
+                </span>
+              </span>
+              <span className="text-[9px] font-semibold tracking-[0.22em] text-bolt-elements-textTertiary">
+                BOLT-REMIX
+              </span>
+            </>
+          )}
           <span className="text-[7px] font-medium tracking-[0.14em] text-bolt-elements-textTertiary/80 mt-[2px]">
             BY: DR. NEAL (THE M.A.D. DOCTOR)
           </span>

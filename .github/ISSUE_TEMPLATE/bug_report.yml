@@ -6,7 +6,7 @@ body:
       value: |
         Thank you for reporting an issue :pray:.
 
-        This issue tracker is for bugs and issues found with [Bolt.diy](https://bolt.diy).
+        This issue tracker is for bugs and issues found with [M.A.D. BOLT-REMIX](https://github.com/Dr-Nealz/M.A.D.-BOLT).
         If you experience issues related to WebContainer, please file an issue in the official [StackBlitz WebContainer repo](https://github.com/stackblitz/webcontainer-core).
 
         The more information you fill in, the better we can help you.

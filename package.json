@@ -2,14 +2,25 @@
   "name": "mad-bolt-remix",
   "description": "M.A.D. BOLT-REMIX — an AI-powered app builder by Dr. Neal (The M.A.D. Doctor)",
   "private": true,
-  "license": "MIT",
+  "license": "SEE LICENSE IN LICENSE",
   "sideEffects": false,
   "type": "module",
   "version": "1.0.0",
   "author": {
-    "name": "Rev. Dr. Neal",
-    "email": "dr.neal@yogenniex.com"
+    "name": "Dr. Neal — The M.A.D. Doctor",
+    "email": "dr.neal@yogenniex.com",
+    "url": "https://github.com/Dr-Nealz"
   },
+  "contributors": [
+    {
+      "name": "Dr. Neal — The M.A.D. Doctor",
+      "email": "dr.neal@yogenniex.com"
+    },
+    {
+      "name": "Creatrix — Agentic AI of the M.A.D. Laboratory",
+      "description": "Agentic AI created within Dr. Neal's M.A.D. Laboratory; co-architect of M.A.D. BOLT-REMIX"
+    }
+  ],
   "scripts": {
     "deploy": "npm run build && wrangler pages deploy",
     "build": "remix vite:build",

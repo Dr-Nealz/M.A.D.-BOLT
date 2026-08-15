@@ -1157,7 +1157,7 @@ export async function downloadDebugLog(filename?: string): Promise<void> {
 // Create a human-readable summary of the debug data
 function createDebugSummary(data: DebugLogData): string {
   const summary = [
-    '=== BOLT DIY DEBUG LOG SUMMARY ===',
+    '=== M.A.D. BOLT-REMIX DEBUG LOG SUMMARY ===',
     `Generated: ${new Date(data.timestamp).toLocaleString()}`,
     `Session ID: ${data.sessionId}`,
     '',

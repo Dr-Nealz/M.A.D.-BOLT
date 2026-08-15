@@ -1,29 +1,29 @@
-# Code Owners for bolt.diy
+# Code Owners for M.A.D. BOLT-REMIX
 # These users/teams will automatically be requested for review when files are modified
 
-# Global ownership - repository maintainers
-* @stackblitz-labs/bolt-maintainers
+# Global ownership - repository maintainers (Dr. Neal — The M.A.D. Doctor)
+* @Dr-Nealz
 
 # GitHub workflows and CI/CD configuration - require maintainer review
-/.github/ @stackblitz-labs/bolt-maintainers
-/package.json @stackblitz-labs/bolt-maintainers
-/pnpm-lock.yaml @stackblitz-labs/bolt-maintainers
+/.github/ @Dr-Nealz
+/package.json @Dr-Nealz
+/pnpm-lock.yaml @Dr-Nealz
 
 # Security-sensitive configurations - require maintainer review
-/.env* @stackblitz-labs/bolt-maintainers
-/wrangler.toml @stackblitz-labs/bolt-maintainers  
-/Dockerfile @stackblitz-labs/bolt-maintainers
-/docker-compose.yaml @stackblitz-labs/bolt-maintainers
+/.env* @Dr-Nealz
+/wrangler.toml @Dr-Nealz
+/Dockerfile @Dr-Nealz
+/docker-compose.yaml @Dr-Nealz
 
 # Core application architecture - require maintainer review
-/app/lib/.server/ @stackblitz-labs/bolt-maintainers
-/app/routes/api.* @stackblitz-labs/bolt-maintainers
+/app/lib/.server/ @Dr-Nealz
+/app/routes/api.* @Dr-Nealz
 
 # Build and deployment configuration - require maintainer review
-/vite*.config.ts @stackblitz-labs/bolt-maintainers
-/tsconfig.json @stackblitz-labs/bolt-maintainers
-/uno.config.ts @stackblitz-labs/bolt-maintainers
-/eslint.config.mjs @stackblitz-labs/bolt-maintainers
+/vite*.config.ts @Dr-Nealz
+/tsconfig.json @Dr-Nealz
+/uno.config.ts @Dr-Nealz
+/eslint.config.mjs @Dr-Nealz
 
 # Documentation (optional review)
 /*.md

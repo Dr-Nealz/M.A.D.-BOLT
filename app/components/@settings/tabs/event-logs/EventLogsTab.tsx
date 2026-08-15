@@ -509,7 +509,7 @@ export function EventLogsTab() {
       doc.setFont('helvetica', 'bold');
       doc.text('Event Logs Report', margin, 35);
 
-      // Add subtitle with bolt.diy
+      // Add subtitle with M.A.D. BOLT-REMIX
       doc.setFontSize(12);
       doc.setFont('helvetica', 'normal');
       doc.text('M.A.D. BOLT-REMIX - AI Development Platform', margin, 45);
